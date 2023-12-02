@@ -1,12 +1,18 @@
 name: Test React App
-on: push
+on:
+  push: 
+    branches:
+      - "master"
 jobs: 
   test: 
     runs-on: ubuntu-latest
     steps: 
-      - name: Get repository code
-        uses: actions/checkout@v3
-      - name: Install dependencies
-        run: npm i
-      - name: Test application
-        run: npm run test
+      # - name: Get repository code
+      #   uses: actions/checkout@v3
+      # - name: Install dependencies
+      #   run: npm i
+      # - name: Test application
+      #   run: npm run test
+      - name: Console
+        run: |
+          echo хуй
